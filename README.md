@@ -31,18 +31,27 @@ Swift 的特点包括：
 # 进入项目目录
 cd swift-hello-world-demo
 
-# 运行程序（使用 Swift Package Manager）
-swift run
+# 编译运行（macOS 需要指定 SDK 版本）
+swiftc -sdk /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk hello.swift -o hello
+./hello
 
-# 或者直接运行单个 Swift 文件
-swift Sources/main.swift
+# 或者直接运行单个 Swift 文件（需要配置 SDK）
+swift hello.swift
 ```
 
 ### 预期输出
 
 ```
-Hello, World!
-欢迎学习 Swift 编程语言
+Hello, Swift!
+欢迎使用 Swift 编程语言!
+这是 Swift 6.0
+整数: 42
+浮点数: 3.14
+Swift 很棒: true
+5 + 3 = 8
+你好, Swift!
+水果: ["Apple", "Banana", "Orange"]
+人员信息: ["city": "北京", "name": "张三", "age": "25"]
 ```
 
 ## 教程
